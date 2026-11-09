@@ -44,5 +44,6 @@ def get_settings() -> Settings:
     """
     global _settings
     if _settings is None:
-        _settings = Settings()
+        # Required fields are read from the environment, which mypy cannot see.
+        _settings = Settings()  # type: ignore[call-arg]
     return _settings

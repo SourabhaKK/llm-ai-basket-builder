@@ -1,0 +1,21 @@
+# Core FastAPI dependencies
+fastapi>=0.162.0
+uvicorn[standard]>=0.54.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# LLM Integration
+openai>=1.10.0
+
+# Utilities
+python-dotenv>=1.2.4
+httpx>=0.26.0
+
+# Testing
+pytest>=9.2.0
+pytest-asyncio>=0.23.0
+pytest-cov>=7.1.0
+httpx>=0.26.0  # For TestClient
+
+# Type checking
+mypy>=2.4.1
